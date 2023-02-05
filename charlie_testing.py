@@ -20,13 +20,13 @@ def callAmount(n):
 def main():
     all_values = []
     print(f"{'Size' : <15}{'Count' : <10}{'Median': <20}{'Mean' : <20}{'StDev' : <10}")
-    for i in range(1, 8):
-        all_values.append(callAmount(2**i))
+    for i in range(1, 21):
+        all_values.append(callAmount(10*i))
     
     all_sizes = []
     all_length = []
     for item in all_values:
-        all_sizes.append(2**(4+len(all_sizes)))
+        all_sizes.append(10*(1+len(all_sizes)))
         all_length.append(item['mean'])
     plt.plot(all_sizes,all_length)
     plt.show()

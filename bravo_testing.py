@@ -20,7 +20,7 @@ def callAmount(n):
 def main():
     all_values = []
     print(f"{'Size' : <15}{'Count' : <10}{'Median': <20}{'Mean' : <20}{'StDev' : <10}")
-    for i in range(4, 20):
+    for i in range(4, 23):
         all_values.append(callAmount(2**i))
     
     all_sizes = []
